@@ -12,7 +12,8 @@ namespace Geek.Infrastructrue.Mail
         public string Password { get; set; }
         public static MailConfig GetDefault()
         {
-            return IocManager.GetService<IConfiguration>().GetSection(MailConsts.ConfigName).Get<MailConfig>();
+            // return IocManager.GetService<IConfiguration>().GetSection(MailConsts.ConfigName).Get<MailConfig>();
+            return null;
         }
     }
 }
